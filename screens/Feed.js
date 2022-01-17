@@ -12,9 +12,9 @@ import { RFValue } from "react-native-responsive-fontsize";
 import PostCard from "../screens/PostCard";
 
 import { FlatList } from "react-native-gesture-handler";
+import PostScreen from '../screens/PostScreen'
 
-
-let stories = require("../temp_stories.json");
+let post = require("../temp_post.json");
 
 export default class Feed extends Component {
   constructor(props) {
@@ -24,7 +24,7 @@ export default class Feed extends Component {
 
 
   renderItem = ({ item: post }) => {
-    return <PostCard post={post} />;
+    return <PostScreen post={post} />;
   };
 
   keyExtractor = (item, index) => index.toString();
