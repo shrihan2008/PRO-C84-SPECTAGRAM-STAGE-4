@@ -24,7 +24,7 @@ export default class Feed extends Component {
 
 
   renderItem = ({ item: post }) => {
-    return <PostScreen post={post} />;
+    return <PostCard post={post} />;
   };
 
   keyExtractor = (item, index) => index.toString();

@@ -17,7 +17,7 @@ import { RFValue } from "react-native-responsive-fontsize";
 import AppLoading from "expo-app-loading";
 import * as Speech from 'expo-speech'
 
-export default class StoryScreen extends Component {
+export default class PostScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
